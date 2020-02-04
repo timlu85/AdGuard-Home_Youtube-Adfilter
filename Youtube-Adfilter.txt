@@ -1,1 +1,1 @@
-/^r.*googlevideo\.com$/
+/r[0-9].*googlevideo\.com$/
