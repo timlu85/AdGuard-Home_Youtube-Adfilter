@@ -13,14 +13,8 @@ www.youtube.com###related
 www.youtube.com##.ytp-endscreen-content
 www.youtube.com##app-drawer#guide
 www.youtube.com##ytd-browse[page-subtype="home"]
-##div.ytp-pause-overlay.ytp-scroll-min
 www.youtube.com##div#subscribe-button
 www.youtube.com##.ytp-ce-element.ytp-ce-video
-
-##.ad-container
-##.video-ads
-##.ytp-ad-progress-list
-=adunit&
 youtube.com###masthead-ad
 ||doubleclick.net^
 ||flashtalking.com$domain=youtube.com
@@ -33,3 +27,8 @@ youtube.com###masthead-ad
 ||www.youtube.com/api/stats
 ||www.youtube.com/pagead
 ||www.youtube.com/ptracking
+##.ad-container
+##.video-ads
+##.ytp-ad-progress-list
+##div.ytp-pause-overlay.ytp-scroll-min
+=adunit&
