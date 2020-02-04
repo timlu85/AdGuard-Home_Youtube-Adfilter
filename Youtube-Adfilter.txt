@@ -1,1 +1,3 @@
 /r[0-9].*googlevideo\.com$/
+@@/r[0-9].sn-ipoxu.*\.googlevideo\.com/$important
+@@/r[0-9]---sn-ipoxu.*\.googlevideo\.com/$important
