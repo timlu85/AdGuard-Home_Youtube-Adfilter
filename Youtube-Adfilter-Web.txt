@@ -1,0 +1,26 @@
+[Adblock Plus 1.1]
+! Title:Youtube-Adfilter-Web
+! Version:1.0
+! Status:alpha
+
+ads.youtube.com
+partnerad.l.doubleclick.net
+securepubads.g.doubleclick.net
+ade.googlesyndication.com
+
+##.ad-container
+##.video-ads
+##.ytp-ad-progress-list
+=adunit&
+youtube.com###masthead-ad
+||doubleclick.net^
+||flashtalking.com$domain=youtube.com
+||googleadservices.com
+||googlesyndication.com^
+||s0.2mdn.net/ads
+||www.google.*/pagead$domain=youtube.com
+||www.youtube.com/[[computeEmptyGif_()]]$image
+||www.youtube.com/[[computeThumbnailUrl_(data.thumbnail)]]
+||www.youtube.com/api/stats
+||www.youtube.com/pagead
+||www.youtube.com/ptracking
