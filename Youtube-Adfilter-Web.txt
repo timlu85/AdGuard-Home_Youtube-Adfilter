@@ -9,6 +9,7 @@
 ! @@/r[0-9]---sn-ipoxu.*\.googlevideo\.com/$important
 ! /.*akamaiedge.net/
 ! /.*akamai.net/
+/(^r[[:digit:]]+(\.|\-+)[[:alnum:]]+\-+[[:alnum:]]+\-+[[:alnum:]]+\.)(googlevideo|gvt1)\.com$/
 
 ads.youtube.com
 partnerad.l.doubleclick.net
