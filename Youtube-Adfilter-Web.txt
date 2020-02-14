@@ -1,7 +1,13 @@
-[Adblock Plus 1.1]
 ! Title:Youtube-Adfilter-Web
 ! Version:1.0
 ! Status:alpha
+
+! REGEX TEST
+! /r[0-9].*googlevideo\.com$/
+! @@/r[0-9].sn-ipoxu.*\.googlevideo\.com/$important
+! @@/r[0-9]---sn-ipoxu.*\.googlevideo\.com/$important
+! /.*akamaiedge.net/
+! /.*akamai.net/
 
 ads.youtube.com
 partnerad.l.doubleclick.net
