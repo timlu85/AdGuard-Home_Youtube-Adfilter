@@ -1,7 +1,8 @@
 [Adblock Plus 2.0]
-! Title:Youtube-Adfilter-Web
-! Version:1.0
-! Status:alpha
+! Title: Youtube-Adfilter-Web
+! Version: 1.1
+! Last Update: 2020/05/31 
+! Status: Alpha
 
 ! REGEX TEST
 ! /r[0-9].*googlevideo\.com$/
@@ -11,16 +12,14 @@
 ! /.*akamai.net/
 ! /(^r[[:digit:]]+(\.|\-+)[[:alnum:]]+\-+[[:alnum:]]+\-+[[:alnum:]]+\.)(googlevideo|gvt1)\.com$/
 
-ads.youtube.com
-partnerad.l.doubleclick.net
-securepubads.g.doubleclick.net
-ade.googlesyndication.com
-
-##.ad-container
-##.video-ads
-##.ytp-ad-progress-list
-=adunit&
+youtube.com##.ad-container
+youtube.com##.video-ads
+youtube.com###player-ads
+youtube.com##.ytp-ad-progress-list
+=adunit&$domain=youtube.com
 youtube.com###masthead-ad
+||doubleclick.net^$third-party
+||2mdn.net^$domain=youtube.com
 ||doubleclick.net^
 ||flashtalking.com$domain=youtube.com
 ||googleadservices.com
@@ -32,3 +31,10 @@ youtube.com###masthead-ad
 ||www.youtube.com/api/stats
 ||www.youtube.com/pagead
 ||www.youtube.com/ptracking
+
+youtube.com##.ytd-search-pyv-renderer
+youtube.com##.pyv-afc-ads-container
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer:has( > div#contents > ytd-promoted-sparkles-text-search-renderer )
+www.youtube.com##ytd-carousel-ad-renderer
+www.youtube.com##ytd-promoted-sparkles-web-renderer
+
