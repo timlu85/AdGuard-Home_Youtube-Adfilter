@@ -38,3 +38,17 @@ www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer:has( > div#
 www.youtube.com##ytd-carousel-ad-renderer
 www.youtube.com##ytd-promoted-sparkles-web-renderer
 
+m.youtube.com##a[href^="/watch?v="][onclick^="return koya.onEvent(arguments[0]||window.event,'"]:not([role]):not([class]):not([id])
+m.youtube.com##a[href^="/watch?v="][onclick^="return koya.onEvent(arguments[0]||window.event,'"]:not([role]):not([class]):not([id]) + div
+m.youtube.com##.companion-ad-container
+youtube.com##ytm-promoted-video-renderer
+||youtube.com/_get_ads?
+||googleapis.com/youtubei/v1/browse?$important,protobuf=62887855|49413586|51621377
+||googleapis.com/youtubei/v1/browse?$protobuf=62887855|49413586|51621377
+||googleapis.com/youtubei/v1/next?$important,protobuf=55514441|62960614|65002523|105649908|82182324|99845384
+||googleapis.com/youtubei/v1/next?$protobuf=55514441|62960614|65002523|105649908|82182324|99845384
+||googleapis.com/youtubei/v1/player$important,protobuf=48841103|63112829|23|25
+||googleapis.com/youtubei/v1/player$protobuf=48841103|63112829|23|25
+||googleapis.com/youtubei/v1/search?$important,protobuf=73920376
+||googleapis.com/youtubei/v1/search?$protobuf=73920376
+
