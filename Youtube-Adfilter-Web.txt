@@ -1,8 +1,9 @@
 [Adblock Plus]
 ! Title: Youtube-Adfilter-Web
-! Version: 1.1
-! Last Update: 2020/05/31 
+! Version: 1.3
+! Last Update: 2020/08/07 
 ! Status: Alpha
+
 !
 ! -REGEX TEST-
 !
@@ -12,19 +13,34 @@
 ! /.*akamaiedge.net/
 ! /.*akamai.net/
 ! /(^r[[:digit:]]+(\.|\-+)[[:alnum:]]+\-+[[:alnum:]]+\-+[[:alnum:]]+\.)(googlevideo|gvt1)\.com$/
+
 !
 ! -YouTube Web Test-
 !
-ads.youtube.com
 youtube.com##.ad-container
 youtube.com##.video-ads
 youtube.com###player-ads
 youtube.com##.ytp-ad-progress-list
 =adunit&$domain=youtube.com
 youtube.com###masthead-ad
+youtube.com##.ytd-search-pyv-renderer
+youtube.com##.pyv-afc-ads-container
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer:has( > div#contents > ytd-promoted-sparkles-text-search-renderer )
+www.youtube.com##ytd-carousel-ad-renderer
+www.youtube.com##ytd-promoted-sparkles-web-renderer
+youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+www.youtube.com###video-masthead
+youtube.com##.ytp-ad-overlay-container
+youtube.com#@#.overlay-ads
+youtube.com#@#.ddb
+youtube.com##.ytp-ad-progress
+youtube.com###ad-image\:22
+youtube.com##.ytd-action-companion-ad-renderer
+||ads.youtube.com^
+||doubleclick.net^
 ||doubleclick.net^$third-party
 ||2mdn.net^$domain=youtube.com
-||doubleclick.net^
 ||flashtalking.com$domain=youtube.com
 ||googleadservices.com
 ||googlesyndication.com^
@@ -35,11 +51,17 @@ youtube.com###masthead-ad
 ||www.youtube.com/api/stats
 ||www.youtube.com/pagead
 ||www.youtube.com/ptracking
-youtube.com##.ytd-search-pyv-renderer
-youtube.com##.pyv-afc-ads-container
-www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer:has( > div#contents > ytd-promoted-sparkles-text-search-renderer )
-www.youtube.com##ytd-carousel-ad-renderer
-www.youtube.com##ytd-promoted-sparkles-web-renderer
+||youtube.com/get_midroll_
+||pagead2.googlesyndication.com^
+||google.com/pagead/lvz?
+||youtube.com/pagead/
+||youtube.com/ads/$image
+@@||youtube.com/yt/advertise/medias/images/$image
+@@||youtube.com/yt/css/*-advertise.css
+@@||youtube.com/yt/js/www-advertise.min.js$domain=youtube.com
+@@||youtube.com^*_adsense_$xmlhttprequest
+@@||youtube.com/ads/preferences/$popup
+
 !
 ! -YouTube APP Test-
 !
