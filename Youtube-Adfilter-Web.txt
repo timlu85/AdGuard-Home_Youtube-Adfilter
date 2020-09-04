@@ -39,12 +39,10 @@ youtube.com###ad-image\:22
 youtube.com##.ytd-action-companion-ad-renderer
 ||ads.youtube.com^
 ||doubleclick.net^
-||doubleclick.net^$third-party
-||2mdn.net^$domain=youtube.com
 ||flashtalking.com$domain=youtube.com
 ||googleadservices.com
 ||googlesyndication.com^
-||s0.2mdn.net/ads
+||2mdn.net^
 ||www.google.*/pagead$domain=youtube.com
 ||www.youtube.com/[[computeEmptyGif_()]]$image
 ||www.youtube.com/[[computeThumbnailUrl_(data.thumbnail)]]
@@ -56,6 +54,13 @@ youtube.com##.ytd-action-companion-ad-renderer
 ||google.com/pagead/lvz?
 ||youtube.com/pagead/
 ||youtube.com/ads/$image
+||admob.com^
+||adservice.google.com^
+||adservice.google.com.tw^
+||adservice.google.tw^
+||google-analytics.com^
+||googletagservices.com^
+||googletagmanager.com^
 @@||youtube.com/yt/advertise/medias/images/$image
 @@||youtube.com/yt/css/*-advertise.css
 @@||youtube.com/yt/js/www-advertise.min.js$domain=youtube.com
